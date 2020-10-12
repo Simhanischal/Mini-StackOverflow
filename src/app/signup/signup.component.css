@@ -1,0 +1,34 @@
+.background{
+    background-color:#155765;
+} 
+
+.signUpHeading{
+    color: white;
+    font-size:x-large;
+}
+
+.formLabel{
+    color: white;
+}
+
+.signUpBtn{
+    color: black;
+    background-color: #A7D2Cb;
+}
+
+.signUpBtn:hover{
+    color: white;
+    background-color: #65cab9;
+}
+
+.loginText{
+    color: white;
+}
+
+.loginLink{
+    color: #A7D2Cb;
+}
+
+.requiredStar{
+    color: red;
+}

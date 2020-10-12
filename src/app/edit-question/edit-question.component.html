@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="row">&nbsp;</div>
+    <h1 class="editHeading">Edit Your Question</h1>
+    <div class="row">&nbsp;</div> 
+    <div class="row">&nbsp;</div> 
+    <div class="row">
+        <div class="col-md-2">&nbsp;</div>
+        <div class="col-md-8 editForm">
+            <form action="" ngNativeValidate (ngSubmit)="editQuestion(title.value,body.value,tags.value)">
+            <div class="row">&nbsp;</div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="form-group col-md-8 formItem">
+                    <label class="formLabel" for="title">Question Title  <span class="requiredStar">*</span></label>
+                    <input type="text" #title required class="form-control formInput" required maxlength="65" id="title" value="{{question.title}}">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="form-group col-md-8 formItem">
+                    <label class="formLabel" for="body">Question Body  <span class="requiredStar">*</span></label>
+                    <textarea class="form-control formInput" #body required id="body" rows="4">{{question.body}}</textarea>
+                </div>
+                <div class="col-md-2"></div>
+            </div> 
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="form-group col-md-8 formItem">
+                    <label class="formLabel" for="tags">Tags <span class="requiredStar">*</span></label>
+                    <input type="text" #tags required class="form-control formInput" required maxlength="40" id="tags" value="{{question.tags}}">
+                </div>
+                <div class="col-md-2"></div>
+            </div> 
+            <div class="row">&nbsp;</div>
+            <div class="editButtonDiv"><button class="btn editButton">Submit Edits</button></div>
+            <div class="row">&nbsp;</div>
+            <div class="row">&nbsp;</div>
+            </form>
+        </div>
+        <div class="col-md-2">&nbsp;</div>
+    </div>
+</div>
+<div class="row">&nbsp;</div>
+
+<app-footer></app-footer>

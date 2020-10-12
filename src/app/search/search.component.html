@@ -1,0 +1,32 @@
+<div class="container banner">
+    <div class="col-md-12">&nbsp;</div>
+    <button class="btn askQuestionBtn" (click)="askQuestion()">Ask a Question</button>
+    <div class="col-md-12">&nbsp;</div>
+    <div class="col-md-12 headingText">
+        <h1 class="heading">Search Results</h1>
+    </div>
+    <hr>
+</div>
+ 
+<div class="container main" *ngFor="let question of pageQuestions">
+    <div class="row"> 
+        <div class="col-md-2"></div>
+        <div class="col-md-8 questions">
+            <div class="row">
+                <div class="col-md-2"><span  class="answersCount">{{question.answer_ids.length}} Answers</span></div>
+                <div class="col-md-8"><strong class="strongQuestion">Question : </strong> <a class="questionLink" [routerLink]="['/questionAnswers',question._id]">{{question.title}}</a></div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">Tags : {{question.tags}}</div>
+                <div class="col-md-2"></div>
+                <div class="col-md-6"><span class="questionDetails">{{question.askorEdit}} by "{{question.author}}" at {{question.datetime}}</span></div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div> 
+<hr>
+</div>
+
+<app-pagination [totalPages]="totalPages" [currentPageNumber]="currentPageNumber" (onPageChange)="handlePageChange($event)"></app-pagination>
+<app-footer></app-footer>

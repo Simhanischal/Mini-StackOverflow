@@ -1,0 +1,46 @@
+.banner{
+    background-color: #A7D2Cb;
+    color: #221B06;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+.bannerHeading{
+    text-align: center; 
+}
+
+.bannerCaption{
+    text-align: center;
+    font-size: x-large;
+}
+
+.help{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.helpHeading{
+    text-align: center; 
+    color:#221B06; 
+}
+
+.faq{
+    background-color:#155765;
+    color: #FFFFFF;
+}
+
+.bug{
+    background-color:#155765;
+    color: #FFFFFF;
+}
+
+.btnPTag{
+    text-align: center;
+}
+.faq:hover{ 
+    background-color: #A7D2Cb;
+    color: #221B06;
+}
+
+.bug:hover{
+    background-color: #A7D2Cb;
+    color: #221B06; 
+}  

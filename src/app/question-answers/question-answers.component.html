@@ -1,0 +1,122 @@
+<div class="container-fluid banner">
+  <div class="col-md-12">&nbsp;</div>
+  <h4 class="questionTitle">Title : {{ question.title }}</h4>
+  <!--<p><button class="btn vote" (click)="voteQuestion(vote='up',question._id,question.author)">Upvote</button> &nbsp;&nbsp; {{question.votes}} &nbsp;&nbsp; <button class="btn vote" (click)="voteQuestion(vote='down',question._id,question.author)">Downvote</button> </p>-->
+  <div class="row">
+    <div class="col-md-4"><small>Tags : {{question.tags}}</small></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-6"><span class="questionDetails"><small>{{question.askorEdit}} by "{{question.author}}" at {{question.datetime}}</small></span></div>
+</div>
+  <!-- <p class="questionDetails"><small>
+    {{ question.askorEdit }} by "{{ question.author }}" at
+    {{ question.datetime }}
+  </small></p> -->
+</div> 
+
+ 
+<div class="container questions">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <p class="questionBody"><strong class="strongBody">Question :</strong> {{ question.body }}</p>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="col-md-12">&nbsp;</div>
+  <!-- <p>Tags : {{ question.tags }}</p> -->
+ 
+  <p class="editDeleteButtons">
+    <button
+      class="btn editQuestionBtn"
+      (click)="editQuestion(question._id, question.author)"
+    >
+      Edit
+    </button>
+    &nbsp;&nbsp;
+    <button class="btn deleteQuestionBtn" (click)="deleteQuestion(question.author)">
+      Delete
+    </button>
+    &nbsp;&nbsp;
+    <button  class="btn reportQuestionBtn" (click)="reportQuestion(question.author)">
+      Report
+    </button>
+  </p>
+  <hr>
+</div>
+
+<div class="container answers">
+  
+    <div class="answerBanner">
+      <!-- <div class="row">&nbsp;</div> -->
+      <h3 class="answersHeading">{{answers.length}} Answer/s</h3>
+      <!-- <div class="row">&nbsp;</div> -->
+    </div>
+    <hr> 
+    <div *ngFor="let answer of answers">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <p class="answerBody"><strong class="strongAnswer">Answer : </strong>{{ answer.answer }}</p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <p  class="answerDetails"><small>
+        {{ answer.answerorEdit }} by "{{ answer.author }}" and at
+        {{ answer.datetime }}
+      </small></p>
+      <!--<p><button class="btn">Upvote</button> &nbsp;&nbsp; <button class="btn">Downvote</button> </p>-->
+      <p class="editDeleteButtons">
+        <button
+          class="btn editAnswerBtn"
+          (click)="editAnswer(answer._id, answer.author)"
+        >
+          Edit
+        </button>
+        &nbsp;&nbsp;
+        <button
+          class="btn deleteAnswerBtn"
+          (click)="deleteAnswer(answer._id, answer.author)"
+        >
+          Delete
+        </button>
+        &nbsp;&nbsp;
+        <button
+          class="btn reportAnswerBtn"
+          (click)="reportAnswer(answer._id, answer.author)"
+        >
+          Report
+        </button>
+      </p>
+    <hr>
+  </div>
+</div>
+
+<div class="container yourAnswer">
+  <div class="yourAnswerBanner">
+    <div class="row">&nbsp;</div>
+    <h4 class="yourAnswerHeading">Type in Your Answer :</h4>
+    <div class="row">&nbsp;</div>
+  </div>
+  <div class="row">&nbsp;</div>
+  <form action="" ngNativeValidate (ngSubmit)="postAnswer(answer.value)">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="form-group col-md-8 formItem">
+        <textarea
+          class="form-control formInput"
+          required
+          minlength="5"
+          #answer
+          required
+          id="body"
+          rows="8"
+          placeholder="Your answer should contain atleast 35 characters"
+        ></textarea>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="col-md-12">&nbsp;</div>
+    <div class="addAnswerBtnDiv"><button class="btn btn-success addAnswerBtn" type="submit">Add Your Answer</button></div>
+    <div class="col-md-12">&nbsp;</div>
+  </form>
+</div>

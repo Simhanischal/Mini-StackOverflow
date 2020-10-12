@@ -1,0 +1,79 @@
+<div class="background">
+    <div class="row m-0">&nbsp;</div>
+    <div class="row m-0">&nbsp;</div>
+    <div class="row m-0">
+        <div class="col-md-5"></div>
+        <div class="col-md-6" ><span class="signUpHeading" >Please Signup here</span></div>
+    </div>
+    <br> 
+    <form (ngSubmit)="onSubmit(username.value,email.value,password.value,rePassword.value)" ngNativeValidate>
+        <div class="row m-0">
+            <div class="col-md-3"></div>
+            <div class="form-group row col-md-6">
+                <label for="exampleInputEmail1" class="col-md-4 col-form-label formLabel">Preferred Username : <span class="requiredStar">*</span> </label>
+                <input type="text"#username required class="form-control  col-md-8" maxlength="8" placeholder="Enter your preferred username">
+            </div>
+            <div class="col-md-3"></div>
+        </div> 
+        <div class="row m-0">
+            <div class="col-md-3"></div>
+            <div class="form-group row col-md-6">
+                <label for="exampleInputEmail1" class="col-md-4 col-form-label formLabel" >Email address : <span class="requiredStar">*</span> </label>
+                <input type="email" #email required class="form-control  col-md-8" placeholder="Enter your email address">
+            </div>
+            <div class="col-md-3"></div>
+        </div>  
+        <div class="row m-0">
+            <div class="col-md-3"></div>
+            <div class="form-group row col-md-6"> 
+                <label for="exampleInputPassword1" class="col-form-label col-md-4 formLabel">Password : <span class="requiredStar">*</span></label>
+                <input type="password" #password  class="form-control col-md-8"   minlength="8" placeholder="Enter your password">
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row m-0">
+            <div class="col-md-3"></div>
+            <div class="form-group row col-md-6"> 
+                <label for="exampleInputPassword1" class="col-form-label col-md-4 formLabel">Retype Password : <span class="requiredStar">*</span></label>
+                <input type="password" #rePassword class="form-control col-md-8"  minlength="8" placeholder="Enter your password again">
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <br>
+        <div class="row m-0">
+            <div class="col-md-3"></div>
+            <div class="form-group row col-md-6">
+                <div class="col-sm-10">
+                    <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label formLabel" for="subscribe">Subscribe to future updates from our team!</label>    
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <br>
+        <div class="row m-0">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <button type="submit" class="btn signUpBtn">Submit</button>
+            </div>
+            <div class="col-md-3"></div>
+        </div>  
+        <br>
+        <div class="row m-0">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <span class="loginText">Already have an account?</span>&nbsp;<a class="loginLink" routerLink="/login">Sign in</a> &nbsp;<span class="loginText">here!</span>
+            </div>
+            <div class="col-md-3"></div>
+        </div> 
+        
+      </form>
+      <div class="row m-0">&nbsp;</div> 
+      <div class="row m-0">&nbsp;</div>
+      <div class="row m-0">&nbsp;</div>
+</div>
+
+<app-footer></app-footer>

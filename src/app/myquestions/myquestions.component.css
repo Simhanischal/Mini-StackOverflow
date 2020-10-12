@@ -1,0 +1,44 @@
+.banner{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+.askQuestionBtn{
+    background-color:#A7D2Cb;
+    color: #221B06;
+}
+
+.askQuestionBtn:hover{
+    background-color: #155765;
+    color: #FFFFFF;
+}
+
+.heading{
+    color: #221B06;
+}
+
+.main{
+    background-color: #155765; 
+}
+ 
+.questions{
+    background-color: #A7D2Cb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.strongQuestion , .questionDetails , .answersCount{
+    color: #221B06;
+}
+
+.strongQuestion{
+    font-size: 18px;
+}
+
+.questionLink{
+    font-size: 18px;
+    color: #155765;
+}
+
+.questionDetails{
+    font-size: 14px;
+}

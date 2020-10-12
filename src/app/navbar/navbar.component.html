@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" routerLink="/home">
+    <img src="assets/images/logo.png" class="navbarLogo" alt="navbar Logo">
+    <span class="brandName">StackOverflow</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto"> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/rules">Rules For Posting</a>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/help">Help</a>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">About</a>
+        </li>
+    </ul>
+    <form class="form-inline" (ngSubmit)="searchQuestion(searchString.value)">
+        <input class="form-control mr-sm-2" #searchString  type="search" placeholder="Search Questions/Tags" aria-label="Search">
+        <button class="btn gotoBtn my-2 my-sm-0"  type="submit">Go To</button>
+    </form>
+    &nbsp;&nbsp;&nbsp;
+    <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle btn myProfileBtn"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             My Profile 
+            </button>
+            <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
+              <button class="dropdown-item" (click)="myQuestions()">My Questions</button>
+              <div class="dropdown-divider"></div>
+              <button class="dropdown-item" (click)="logout()">{{loginOrLogout}}</button>
+            </div>
+        </li>
+    </ul>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+  </nav>

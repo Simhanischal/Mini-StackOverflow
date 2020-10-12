@@ -1,0 +1,38 @@
+.background{
+    background-color:#155765;
+}
+
+ .loginHeading{
+     color: white;
+     font-size: x-large;
+ }
+
+ .formLabel{
+     color: white;
+ }
+
+ #emailHelp{
+     color:#A7D2Cb;
+ }
+
+.loginBtn{
+    color: black;
+    background-color: #A7D2Cb;
+}
+
+.loginBtn:hover{
+    color: white;
+    background-color: #65cab9;
+}
+
+ .requiredStar{
+     color: red;
+ }
+
+ .signUpText{
+     color: white;
+ }
+
+ .signUpLink{
+     color: #A7D2Cb;
+ }

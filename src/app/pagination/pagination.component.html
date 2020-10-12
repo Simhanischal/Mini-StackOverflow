@@ -1,0 +1,10 @@
+<div class="pagination">
+    <button class="prevPageBtn" (click)="handlePageChange('prev')">Prev</button>
+    <div class="pages">
+        Page 
+        <input type="number" id="pageInput" #pageNumber value={{currentPageNumber}} min="1" max={{totalPages}} (change)="handlePageChange(pageNumber.value)">
+        of 
+        {{totalPages}}
+    </div>
+    <button class="nextPageBtn" (click)="handlePageChange('next')">Next</button>
+</div>

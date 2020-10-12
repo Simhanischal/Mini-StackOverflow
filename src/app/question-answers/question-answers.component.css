@@ -1,0 +1,58 @@
+.banner{
+    background-color: #A7D2Cb;
+}
+
+.questionTitle , .yourAnswerHeading{
+    text-align: center;
+}
+
+.questionDetails , .answerDetails{
+    color: #221B06;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+.editDeleteButtons , .addAnswerBtnDiv{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.editQuestionBtn , .editAnswerBtn{
+    border: 2px solid #008CBA;
+}
+
+.deleteQuestionBtn , .deleteAnswerBtn{
+    border: 2px solid #f44336;
+}
+
+.reportQuestionBtn , .reportAnswerBtn{
+    border: 2px solid #555555;
+}
+
+.editQuestionBtn:hover , .editAnswerBtn:hover{
+    background-color: #008CBA;
+    color: #FFFFFF;
+}
+
+.deleteQuestionBtn:hover , .deleteAnswerBtn:hover{
+    background-color: #f44336;
+    color: #FFFFFF;
+}
+
+.reportQuestionBtn:hover , .reportAnswerBtn:hover{
+    background-color: #555555;
+    color: #FFFFFF;
+}
+
+.banner , .answerBanner , .yourAnswerBanner{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+.strongBody , .strongAnswer{
+    font-size: large;
+}
+
+
+ 

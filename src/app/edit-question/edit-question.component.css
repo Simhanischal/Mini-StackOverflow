@@ -1,0 +1,31 @@
+.editHeading{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+    color: #221B06;
+} 
+
+.editForm{
+    background-color: #155765;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.formLabel{
+    color: #FFFFFF;
+}
+
+.requiredStar{ 
+    color: red;
+}
+
+.editButtonDiv{
+    text-align: center;
+}
+
+.editButton{
+    background-color: #A7D2Cb;
+}
+
+.editButton:hover{
+    color: #FFFFFF;
+}

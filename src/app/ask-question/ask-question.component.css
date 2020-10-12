@@ -1,0 +1,46 @@
+.askQuestionBanner{
+    background-color: #A7D2Cb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+.askQuestionHeading{
+    text-align: center;
+    color: #221B06;
+}
+
+.bannerCaption{
+    font-size: 22px;
+}
+
+.rulesLink{
+    color:#f44336;
+}
+
+.main{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.questionForm{
+    background-color: #155765;
+}
+ 
+.formHeading , .formButtonDiv{
+    text-align: center;
+    color: #221B06;
+}
+
+.formLabel{
+    color: #FFFFFF;
+}
+
+.requiredStar{
+    color: #f44336;
+}
+
+.formButton{
+    background-color: #A7D2Cb;
+}
+
+.formButton:hover{
+    color: #FFFFFF;
+}

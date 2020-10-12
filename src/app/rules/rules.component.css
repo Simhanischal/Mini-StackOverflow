@@ -1,0 +1,56 @@
+.banner{
+    background-color: #A7D2Cb;
+    color: #221B06;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+.bannerText{
+    text-align: center;
+}
+
+.bannerCaption{
+    font-size: 20px;
+}
+
+.rules{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ruleHeading{
+    text-align: center;
+    color: #221B06;
+}
+
+.ruleCaption{
+    color: #221B06;
+    text-align: center;
+}
+
+.ruleListItem{
+    background-color: #155765; 
+    color: white;
+    transition: 0.3s;
+}
+
+.ruleListItem:hover{
+    transform: scale(1.2);
+}
+
+.ruleHighlight{
+    color: wheat;
+    font-size: large;
+}
+
+.askQuestion{
+    text-align: center;
+}
+
+.askQuestionBtn{
+    color: #221B06;
+    background-color: #A7D2Cb;
+}
+
+.askQuestionBtn:hover{
+    color: #FFFFFF;
+    background-color: #155765;
+}

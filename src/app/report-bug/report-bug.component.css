@@ -1,0 +1,41 @@
+.banner{
+    background-color: #A7D2Cb;
+    color: #221B06;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+.bannerCaption{
+    font-size: 22px;
+}
+
+.bugHeading{
+    text-align: center;
+    color: #221B06;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.bugForm{
+    background-color: #155765;
+}
+
+.formLabel{
+    color: white;
+}
+
+.requiredStar{
+    color: #f44336;
+}
+
+.formButtonDiv{
+    text-align: center;
+}
+
+.formButton{
+    background-color: #A7D2Cb;
+}
+
+.formButton:hover{
+    color: #FFFFFF;
+}

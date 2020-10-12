@@ -1,0 +1,48 @@
+.navbar{
+    background-color:#A7D2Cb;
+}
+
+.navbarLogo{
+    width : 40px;
+    height : 35px;
+    transition: 0.3s;
+}
+
+.navbarLogo:hover{
+    transform: rotate(170deg);
+}
+
+.nav-link , .nav-brand{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+    transition: 0.3s;
+}
+
+.nav-item .nav-link{
+    color: #000000;
+}
+
+.nav-item  .nav-link:hover{
+    color: #FFFFFF;
+    background-color: #155765;
+    text-decoration: underline;
+}
+
+.gotoBtn{
+    background-color: #155765;
+    color: #FFFFFF;
+}
+
+.gotoBtn:hover{
+    background-color: #65cab9;
+    color: black;
+}
+
+.myProfileBtn{
+    background-color: #A7D2Cb;
+}
+
+.dropdown-menu{
+    background-color: #A7D2Cb;
+    color: #221B06;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+}
